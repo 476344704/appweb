@@ -1,0 +1,21 @@
+.grid {
+	/* z-index: 2;
+	display: block;
+    margin: 0 auto; */
+    background-color: #ABDCFF;
+}
+.grid__item {
+    width: 45%;
+    height: grid__img;
+    /* margin: 10px auto; */
+	margin: 5px 8px 0 8px;
+    float: left;
+    border: 1px #b2b5c7 solid;
+    border-radius: 5px;
+    
+}
+.grid__img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}

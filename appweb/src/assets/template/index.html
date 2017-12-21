@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)http://pyq001.1y0g.com/view3?uid=oJ642szr4G-SKgO5KFnUdr_NfWIU&from=singlemessage&isappinstalled=0 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>我的朋友圈</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        * {cursor: pointer;}
+        .weui_mask_transition {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0);
+            -webkit-transition: background .3s;
+            transition: background .3s;
+        }
+        .weui_fade_toggle {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .weui_actionsheet {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            -webkit-transform: translate(0, 100%);
+            -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            z-index: 2;
+            width: 100%;
+            background-color: #EFEFF4;
+            -webkit-transition: -webkit-transform .3s;
+            transition: transform .3s;
+        }
+        .weui_actionsheet_toggle {
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+        .weui_actionsheet_menu {
+            background-color: #FFFFFF;
+        }
+        .weui_actionsheet_cell:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid #D9D9D9;
+            -webkit-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+            -webkit-transform: scaleY(0.5);
+            -ms-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+        .weui_actionsheet_cell:first-child:before {
+            display: none;
+        }
+        .weui_actionsheet_cell {
+            position: relative;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 18px;
+        }
+        .weui_actionsheet_cell.title {
+            color: #999;
+        }
+        .weui_actionsheet_action {
+            margin-top: 6px;
+            background-color: #FFFFFF;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="actionSheet_wrap">
+    <div class="weui_mask_transition" id="mask" style="display: none;"></div>
+    <div class="weui_actionsheet" id="weui_actionsheet">
+        <div class="weui_actionsheet_menu">
+            <div class="weui_actionsheet_cell title">选择下面👇进入你的朋友圈</div>
+            <div class="weui_actionsheet_cell play_pyq" data-scene="1">男版朋友圈</div>
+            <div class="weui_actionsheet_cell play_pyq" data-scene="2">女版朋友圈</div>
+        </div>
+        <div class="weui_actionsheet_action">
+            <div class="weui_actionsheet_cell" id="actionsheet_cancel">取消</div>
+        </div>
+    </div>
+</div>
+<div style="margin:0 auto;display:none;">
+    <img class="data-avt" src="images/0.jpg">
+</div>
+<header>
+    <img id="bg" src="images/bg.jpg">
+    <p id="user-name" class="data-name">万虎科技~贾素杰</p>
+    <img id="avt" class="data-avt" src="images/0.jpg">
+</header>
+<div id="main">
+    <div id="list">
+        <ul>
+            <li>
+                <div class="po-avt-wrap">
+                    <img class="po-avt data-avt" src="images/0.jpg">
+                </div>
+                <div class="po-cmt">
+                    <div class="po-hd">
+                        <p class="po-name"><span class="data-name">万虎科技~贾素杰</span></p>
+                        <div class="post">
+                            <p>大家好，听说国内冻成狗🐶？我这边还挺热～</p>
+                            <p>
+                                <img class="list-img" src="images/jt1.jpg" style="height: 80px;">
+                                <img class="list-img" src="images/yt3.jpg" style="height: 80px;">
+                                <img class="list-img data-avt" src="images/0.jpg" style="height: 80px;">
+                            </p>
+                        </div>
+                        <p class="time">刚刚</p><img class="c-icon" src="images/c.png">
+                    </div>
+                    <div class="r"></div>
+                </div>
+            </li>
+            <li>
+                <div class="po-avt-wrap">
+                    <img class="po-avt" src="images/n5.jpg">
+                </div>
+                <div class="po-cmt">
+                    <div class="po-hd">
+                        <p class="po-name">
+                            王思聪
+                        </p>
+                        <div class="post">
+                            <p>
+                                那一年这兄弟三人发誓一定要出人头地
+                                <br>
+                                以后有福同享有难同当
+                                <br>
+                                如今：
+                                <br>
+                                大哥只手遮天万人之上
+                                <br>
+                                二哥黄金万两富甲一方
+                                <br>
+                                三弟淡泊名利为人低调
+                            </p>
+                            <img class="list-img" src="images/xa1.jpg" style="height: 80px;">
+                            <img class="list-img" src="images/ma1.jpg" style="height: 80px;">
+                            <img class="data-avt list-img" src="images/0.jpg" style="height: 80px;">
+                        </div>
+                        <p class="time">
+                            1分钟前
+                        </p>
+                        <img class="c-icon" src="images/c.png">
+                    </div>
+                    <div class="r">
+                    </div>
+                    <div class="cmt-wrap">
+                        <div class="like">
+                            <img src="images/l.png">
+                            鹿晗，林更新，杨幂，angelababy，范冰冰...
+                        </div>
+                        <div class="cmt-list">
+                            <p>
+                                        <span>
+                                            鹿晗：
+                                        </span>
+                                赞！
+                            </p>
+                            <p>
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                低调低调。。
+                            </p>
+                            <p>
+                                        <span>
+                                            王思聪
+                                        </span>
+                                回复
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                哥您就是太低调了
+                            </p>
+                            <p>
+                                        <span>
+                                            习
+                                        </span>
+                                回复
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                好几天没见，我们该聚聚了
+                            </p>
+                            <p>
+                                        <span>
+                                            马云
+                                        </span>
+                                回复
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                有笔大生意找你聊聊
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="po-avt-wrap">
+                    <img class="po-avt" src="images/a1.jpg">
+                </div>
+                <div class="po-cmt">
+                    <div class="po-hd">
+                        <p class="po-name">
+                            苍井空
+                        </p>
+                        <p class="post">
+                            还是好困~
+                            <img src="images/c1.jpg">
+                        </p>
+                        <p class="time">
+                            2分钟前
+                        </p>
+                        <img class="c-icon" src="images/c.png" <="" div="">
+                        <div class="r">
+                        </div>
+                        <div class="cmt-wrap">
+                            <div class="like">
+                                <img src="images/l.png">
+                                陈赫，叫兽易小星，王思聪，陈冠希，余文乐...
+                            </div>
+                            <div class="cmt-list">
+                                <p>
+                                            <span>
+                                                陈赫：
+                                            </span>
+                                    怪我咯~
+                                </p>
+                                <p>
+                                            <span>
+                                                陈冠希：
+                                            </span>
+                                    怪我咯~
+                                </p>
+                                <p>
+                                    <span class="data-name">万虎科技~贾素杰</span>
+                                            <span>
+                                                ：
+                                            </span>
+                                    怪我咯~
+                                </p>
+                                <p>
+                                            <span>
+                                                苍井空
+                                            </span>
+                                    回复
+                                    <span class="data-name">万虎科技~贾素杰</span>
+                                            <span>
+                                                ：
+                                            </span>
+                                    知道就好！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div></li>
+            <li>
+                <div class="po-avt-wrap">
+                    <img class="po-avt" src="images/a2.jpg">
+                </div>
+                <div class="po-cmt">
+                    <div class="po-hd">
+                        <p class="po-name">
+                            周杰伦
+                        </p>
+                        <div class="post">
+                            <p>
+                                <b class="data-name">万虎科技~贾素杰</b>
+                                ，决战夜你要加油！我们哎哟不错战队是最屌的！
+                            </p>
+                            <img class="list-img" src="images/c2.jpg" style="height: 80px;">
+                            <img class="data-avt list-img" src="images/0.jpg" style="height: 80px;">
+                        </div>
+                        <p class="time">
+                            2分钟前
+                        </p>
+                        <img class="c-icon" src="images/c.png">
+                    </div>
+                    <div class="r">
+                    </div>
+                    <div class="cmt-wrap">
+                        <div class="like">
+                            <img src="images/l.png">
+                            汪峰，那英，庾澄庆
+                        </div>
+                        <div class="cmt-list">
+                            <p>
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                杰伦老师，决战夜小公举会来吗。~
+                            </p>
+                            <p>
+                                        <span>
+                                            周杰伦
+                                        </span>
+                                回复
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                你拿冠军了，我让你当小公举的小王纸。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+           
+            <li>
+                <div class="po-avt-wrap">
+                    <img class="po-avt" src="images/a3.jpg">
+                </div>
+                <div class="po-cmt">
+                    <div class="po-hd">
+                        <p class="po-name">
+                            邓超
+                        </p>
+                        <div class="post">
+                            <p>
+                                we are伐木累！欢迎加入跑男第三季！
+                            </p>
+                            <p>
+                                <img class="list-img" src="images/c3.jpg" style="height: 80px;">
+                                <img class="list-img" src="images/c4.jpg" style="height: 80px;">
+                                <img class="data-avt list-img" src="images/0.jpg" style="height: 80px;">
+                            </p>
+                        </div>
+                        <p class="time">
+                            50分钟前
+                        </p>
+                        <img class="c-icon" src="images/c.png">
+                    </div>
+                    <div class="r">
+                    </div>
+                    <div class="cmt-wrap">
+                        <div class="like">
+                            <img src="images/l.png">
+                            <b class="data-name">万虎科技~贾素杰</b>
+                        </div>
+                        <div class="cmt-list">
+                            <p>
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                超哥，当初为什么要选我。
+                            </p>
+                            <p>
+                                        <span>
+                                            邓超
+                                        </span>
+                                回复
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                你是我认识的人当中，最快的！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="po-avt-wrap">
+                    <img class="po-avt" src="images/a4.jpg">
+                </div>
+                <div class="po-cmt">
+                    <div class="po-hd">
+                        <p class="po-name">
+                            范冰冰
+                        </p>
+                        <p class="post">
+                            我的生日趴，你为什么不来
+                            <img class="data-avt" src="images/0.jpg">
+                        </p>
+                        <p class="time">
+                            52分钟前
+                        </p>
+                        <img class="c-icon" src="images/c.png">
+                    </div>
+                    <div class="r">
+                    </div>
+                    <div class="cmt-wrap">
+                        <div class="like">
+                            <img src="images/l.png">
+                            <b class="data-name">万虎科技~贾素杰</b>
+                            ，李晨，李治廷，黎明...
+                        </div>
+                        <div class="cmt-list">
+                            <p>
+                                        <span>
+                                            李晨：
+                                        </span>
+                                呵呵。
+                            </p>
+                            <p>
+                                <span class="data-name">万虎科技~贾素杰</span>
+                                        <span>
+                                            ：
+                                        </span>
+                                最近忙，就酱。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<script>
+</script>
+
+
+<script>
+    function gotoplay(scene) {
+        var gourl = "/act/pengYouQuan/my.php?sv=" + scene;
+        location.href = gourl;
+    }
+    function safetostring(str) {
+        return String(str).replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+    }
+
+    //$("#list").html($("#scene").html());
+
+    setTimeout(function () {
+        // $(".data-name").text(safetostring(nickname));
+        //$(".data-avt").attr("src", headimgurl);
+        var cw = $('.list-img').width();
+        $('.list-img').css({'height': cw + 'px'});
+    }, 0);
+
+    $(window).resize(function () {
+        var cw = $('.list-img').width();
+        $('.list-img').css({'height': cw + 'px'});
+    });
+
+
+    $(document.body).show();
+
+
+    function hideActionSheet(weuiActionsheet, mask) {
+        weuiActionsheet.removeClass('weui_actionsheet_toggle');
+        mask.removeClass('weui_fade_toggle');
+        weuiActionsheet.on('transitionend', function () {
+            mask.hide();
+        }).on('webkitTransitionEnd', function () {
+            mask.hide();
+        })
+    }
+    function showActionSheet() {
+        var mask = $('#mask');
+        var weuiActionsheet = $('#weui_actionsheet');
+        weuiActionsheet.addClass('weui_actionsheet_toggle');
+        mask.show().addClass('weui_fade_toggle').click(function () {
+            hideActionSheet(weuiActionsheet, mask);
+        });
+        $('#actionsheet_cancel').click(function () {
+            hideActionSheet(weuiActionsheet, mask);
+        });
+        weuiActionsheet.unbind('transitionend').unbind('webkitTransitionEnd');
+    }
+    $('#list').not(".noplayimg").on('click', function () {
+        showActionSheet();
+    });
+    $('img').not(".noplayimg").on('click', function (e) {
+        showActionSheet();
+    });
+    $('.play_pyq').on('click', function () {
+        var scene = $(this).data("scene");
+        gotoplay(scene);
+    });
+</script>
+
+
+
+</body>
+</html>
