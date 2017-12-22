@@ -1,6 +1,6 @@
-# douban
+# webapp template
 
-> vue-douban-demo
+> webapp template
 
 ## Build Setup
 
